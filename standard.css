@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/orange.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="CSS/standard.css" rel="stylesheet" type="text/css">
+    <style>
+        nav{
+            bottom:0;
+           right:0;
+            position:absolute;
+            font-family: "Montserrat",sans-serif;
+            color:orange;
+            font-size:2.25em;
+            word-spacing: 2vw;
+            text-shadow:2px 2px black;
+            text-decoration:none;
+            cursor:url("images/pawprint.png"),auto;
+            }
+          a{
+            font-family: "Montserrat",sans-serif;
+            color:orange;
+            text-shadow:2px 2px black;
+            text-decoration:none;
+            cursor:url("images/pawprint.png"),auto;
+             }
+
+               </style>
+    
+    </head>
+<body background="images/playful-kitten-6683.jpg">
+    <div class="col-10 col-md-5">
+        <span class="orangeText">Orange </span><span class="blackText"> is the New </span><span class="orangeText"> Cat</span>
+    </div>
+    <br>
+    <br>
+    <div class="col-10 col-md-5">  
+        <span class="baseText">Only on <img class="inlineImg" style="vertical-align:middle" src="images/netflix.jpg"></span>
+    </div>    
+
+    <nav class="col-6 col-md-2">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="" id="getschedule">Schedule</a>
+        <a href="">Contact</a>
+            </nav>
+    
+      
+    <!--<img id="schedulebox" src="images/schedule.html">-->
+          
+    </body>
+</html>
+            
