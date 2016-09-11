@@ -4,7 +4,7 @@ body{
     background-repeat:no-repeat;
     background-position: center;
     background-attachment: fixed;       
-    webkit-background-size: cover;
+    //*webkit-background-size: cover;*//
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
@@ -61,14 +61,14 @@ header{
             word-spacing: 2vw;
             text-shadow:2px 2px black;
             text-decoration:none;
-            cursor:url("images/pawprint.png"),auto;
+            cursor:url("pawprint.png"),auto;
             }
           a{
             font-family: "Montserrat",sans-serif;
             color:orange;
             text-shadow:2px 2px black;
             text-decoration:none;
-            cursor:url("images/pawprint.png"),auto;
+            cursor:url("pawprint.png"),auto;
              }
         a:hover {
     font-size: larger;
@@ -92,6 +92,32 @@ span.blackText{
     font-size:2.25em;
             font-weight:700;
     }
+.inlineImg{
+    vertical-align:middle;
+}
+#schedule{  
+            position:fixed;
+            top:50%;
+            left:50%;
+            margin-top:-50px;
+            margin-left:-100px;    
+            background-color:black;
+            color:yellow;
+            max-width:60%;
+            max-height:60%;
+            opacity:0.8;
+            z-index: 1;
+        }
+div.hidden{
+            display:none;
+        }
+        h1,ul,li{
+            text-align:center;
+        }
+#close{
+    left:0;
+    top:0;
+}
         //*span.baseText.inlineImg{
             display:inline;
             vertical-align:text-bottom;
