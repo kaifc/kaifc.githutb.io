@@ -1,31 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/orange.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="CSS/standard.css" rel="stylesheet" type="text/css">
     <style>
-        nav{
-            bottom:0;
-           right:0;
-            position:absolute;
-            font-family: "Montserrat",sans-serif;
-            color:orange;
-            font-size:2.25em;
-            word-spacing: 2vw;
-            text-shadow:2px 2px black;
-            text-decoration:none;
-            cursor:url("images/pawprint.png"),auto;
-            }
-          a{
-            font-family: "Montserrat",sans-serif;
-            color:orange;
-            text-shadow:2px 2px black;
-            text-decoration:none;
-            cursor:url("images/pawprint.png"),auto;
-             }
-
+        
                </style>
     
     </head>
@@ -36,8 +16,18 @@
     <br>
     <br>
     <div class="col-10 col-md-5">  
-        <span class="baseText">Only on <img class="inlineImg" style="vertical-align:middle" src="images/netflix.jpg"></span>
-    </div>    
+        <span class="baseText">Only on <img class="inlineImg" src="images/netflix.jpg"></span>
+    </div>
+    
+    <div id="schedule" class="hidden">
+    <h1>Upcoming Episodes
+        <button id="close" type="button"><img src="images/close.png"></button></h1>
+    <ul>
+    <li>Meow on the Town Sept 20</li>
+    <li>El Gato Baile Sept 29</li>
+    <li>Claw Couture  Nov 5</li>
+    </ul>
+    </div>
 
     <nav class="col-6 col-md-2">
         <a href="">Home</a>
@@ -45,9 +35,37 @@
         <a href="" id="getschedule">Schedule</a>
         <a href="">Contact</a>
             </nav>
+    <!--<script //src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#schedule").hide();
+
+    $("#getschedule").click(function(){
+        $("#schedule").show();
+    });
+});
+</script>...>
     
       
     <!--<img id="schedulebox" src="images/schedule.html">-->
+<script>    
+    //*$(document).ready(function () {
+    //$("#schedule").hide();
+//});*//
+//*$("#getschedule").click(function () {
+   // $("#schedule").fadeIn( "slow", function() {
+    // Animation complete
+  //});
+//});*//
+    $(document).ready(function(){
+    $("#getschedule").click(function () {
+    $('#schedule').fadeIn(1000).removeClass('.hidden');
+});
+    });
+//*$("#close").click(function () {
+    //$("#schedule").fadeOut(30000);*//
+//})
+</script>
           
     </body>
 </html>
